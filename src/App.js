@@ -1,26 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {npsAPI} from './apis/nps';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// class App extends React.Component {
+//   getParkInfo =  async () => {
+//     const data = await axios.get(`https://developer.nps.gov/api/v1/parks?parkCode=&stateCode=CA&api_key=${process.env.REACT_APP_API_KEY_NPS}`).then(res => res.data.data)
+//     return data;
+//   }
+
+//   render(){ 
+//     return(
+//       <div>
+//         <ol>
+//           {this.getParkInfo().map(item => <li>{item.fullName}</li>)}
+//         </ol>
+//       </div>
+//     )
+//   }
+// }
+
+class App extends React.Component{
+  getParkInfo = async () => {
+    const data = await npsAPI.get(`/parks?parkCode=&stateCode=CA&api_key=${process.env.REACT_APP_API_KEY_NPS}`).then(res => res.data.data);
+    console.log(data);
+    return data;
+  }
+  
+  render(){
+    return(
+      <div>
+        <div>Hello World!</div>}
+      </div>
+      
+    )
+  }
+};
 
 export default App;
