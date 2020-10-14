@@ -2,16 +2,14 @@ import React from 'react';
 import WeatherWidgetDay from './WeatherWidgetDay'
 import './weatherwidget.css'
 
-const WeatherWidget = () => {
+const WeatherWidget = ({weatherData}) => {
     return(
         <div>
-            <h1 style={{textAlign: 'center'}}>City Name</h1>
             <div className="days-container">
-                <WeatherWidgetDay />
-                <WeatherWidgetDay />
-                <WeatherWidgetDay />
-                <WeatherWidgetDay />
-                <WeatherWidgetDay />
+                {console.log(typeof(weatherData))}
+                {weatherData.map((threeHour, index) => (
+                    <WeatherWidgetDay key={index} weatherStuff={threeHour}/>
+                ))}
             </div>
         </div>
     )
