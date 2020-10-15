@@ -11,5 +11,4 @@ export const getWeatherImage = (arr) => {
     console.log(icon)
     let correctIcon = images.filter(item => item.id === icon)
     return correctIcon[0].src
-    console.log(images)
 }
