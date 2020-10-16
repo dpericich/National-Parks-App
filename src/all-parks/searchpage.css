@@ -1,0 +1,44 @@
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgrey;
+    padding: 2em
+}
+
+.state-dropdown {
+    outline: none;
+    width: 30%;
+    font-size: 2em;
+    color: #2f2f2f;
+    padding: .25em 0 .25em 0.5em;
+    border: 2px solid #2f2f2f;
+    border-radius: 4px;
+}
+
+.park-title-image {
+    height: 6em;
+    color: white;
+    font-size: 3em;
+    text-shadow: 2px 2px black;
+    width: 80%;
+    margin: 5px auto;
+    padding: 10px;
+}
+
+.park-title-image:hover, .park-title-image:active {
+    transform: scale(1.01);
+}
+
+/* Media Queries */
+@media screen and (max-width: 960px) {
+    .search-bar {
+        padding: 1em;
+    }
+
+    .park-title-image {
+        height: 5em;
+        font-size: 1.25em;
+        width: 100%;
+    }
+}
