@@ -8,7 +8,6 @@ export const getWeatherTime = (arr) => {
 
 export const getWeatherImage = (arr) => {
     let icon = arr.weather[0].icon;
-    console.log(icon)
     let correctIcon = images.filter(item => item.id === icon)
     return correctIcon[0].src
 }

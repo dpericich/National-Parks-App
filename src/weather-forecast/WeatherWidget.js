@@ -6,7 +6,6 @@ const WeatherWidget = ({weatherData}) => {
     return(
         <div>
             <div className="days-container">
-                {console.log(typeof(weatherData))}
                 {weatherData.map((threeHour, index) => (
                     <WeatherWidgetDay key={index} weatherStuff={threeHour}/>
                 ))}
