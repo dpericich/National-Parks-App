@@ -8,7 +8,7 @@
     background-color:  #4a5a49;
     color: black;
     font-size: 1.5em;
-    font-family: 'Avenir Book', sans-serif;
+    font-family: 'Courier', sans-serif;
     border-bottom: 2px solid black;
 }
 
@@ -28,8 +28,8 @@
 
 @media screen and (max-width: 960px) {
     .navbar-header {
-        font-size: 0.75em;
-        margin: 0 3px;
+        font-size: 0.65em;
+        padding: 8px 8.5px;
     }
 
     .button-image {

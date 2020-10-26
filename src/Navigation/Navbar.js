@@ -6,13 +6,13 @@ import ranger from './navigation-images/ranger.svg'
 
 const Navbar = () => {
     return (
-        <div className="navbar-header">
+        <div className="navbar-header parkName-link">
             <Link to="/favorites">
-                <img src={ranger} className="button-image"/>
+                <img src={ranger} className="button-image" alt="favorite parks"/>
             </Link>
             <h1>National Parks Guide</h1>
             <Link to="/">
-                <img src={cabin} className="button-image"/>
+                <img src={cabin} className="button-image" alt="home button"/>
             </Link>
         </div>
     )
