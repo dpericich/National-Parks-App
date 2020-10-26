@@ -1,16 +1,19 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './searchpage.css';
 import states from './states'
 import ParkImage from './ParkImage';
 
-const SearchPage = ({parkData, currentStateCode, updateSelectedStateCode}) => {
+const SearchPage = ({parkData, currentStateCode, updateSelectedStateCode, selectPark}) => {
 
     const [stateCode, setStateCode] = useState("AL")
 
     const displaySelectedState = (e) => {
         setStateCode(e.target.value);
-        updateSelectedStateCode(stateCode)
     }
+
+    useEffect(() => {
+        updateSelectedStateCode(stateCode);
+    }, [stateCode])
 
     return (
         <div>
@@ -21,8 +24,7 @@ const SearchPage = ({parkData, currentStateCode, updateSelectedStateCode}) => {
                     })}
                 </select>
             </div>
-            {parkData ? parkData.map((park, index) => <ParkImage park={park} key={index} />) : null}
-            {console.log(parkData)}
+            {parkData ? parkData.map((park, index) => <ParkImage park={park} key={index} index={index} selectPark={selectPark} />) : null}
         </div>
     )
 };

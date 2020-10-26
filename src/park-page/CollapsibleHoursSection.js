@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
-import WeatherWidget from '../weather-forecast/WeatherWidget';
 
-const CollapsibleWeatherSection = ({panelName, weatherData}) => {
+const CollapsibleSection = ({panelName, panelInfo}) => {
     const [panelOpenStatus, setPanelOpenStatus] = useState(false)
 
     let togglePanel = () => {
@@ -14,12 +13,12 @@ const CollapsibleWeatherSection = ({panelName, weatherData}) => {
     return(
         <>
             <button className="panel-btn" onClick={togglePanel}>{panelName}</button>
-            <div className={`collapsible-panel ${displayContent()}`}>
-                <WeatherWidget weatherData={weatherData} />
-            </div>
+                <div className={`collapsible-panel ${displayContent()}`}>{panelInfo.map(item => (
+                    <p>{item}</p>
+                ))}</div>
 
         </>
     )
 };
 
-export default CollapsibleWeatherSection;
+export default CollapsibleSection;
