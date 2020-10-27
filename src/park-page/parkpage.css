@@ -54,6 +54,22 @@ span.designation {
     height: 100%
 }
 
+svg {
+    animation: bear 2s infinite;
+}
+
+.loading-text {
+    animation: bear 2s infinite;
+}
+
+@keyframes bear {
+    0% {fill: black; color: black}
+    25% {fill: yellow; color: yellow}
+    50% {fill: green; color: green}
+    75% {fill: blue; color: blue}
+    100% {fill : red; color:red}
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 960px) {
@@ -80,5 +96,10 @@ span.designation {
         font-size: 1.5em;
         text-align: center;
         padding: .25em 0; 
+    }
+
+    svg {
+        width: 250px;
+        height: 250px;
     }
 }

@@ -12,7 +12,7 @@ a {
 
 .state-dropdown {
     outline: none;
-    width: 30%;
+    width: 100%;
     font-size: 2em;
     color: #2f2f2f;
     padding: .25em 0 .25em 0.5em;
@@ -53,5 +53,7 @@ a {
     .state-dropdown {
         width: 75%;
         padding-left: .5em;
+        display: block;
+        margin: 0 auto;
     }
 }

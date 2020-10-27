@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Proptypes from 'prop-types';
 import WeatherWidget from '../weather-forecast/WeatherWidget';
 
 const CollapsibleWeatherSection = ({panelName, weatherData}) => {
@@ -21,5 +22,10 @@ const CollapsibleWeatherSection = ({panelName, weatherData}) => {
         </>
     )
 };
+
+CollapsibleWeatherSection.propTypes = {
+    panelName: Proptypes.string.isRequired,
+    weatherData : Proptypes.array.isRequired,
+}
 
 export default CollapsibleWeatherSection;

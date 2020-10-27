@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Proptypes from 'prop-types';
 
 const CollapsibleSection = ({panelName, panelInfo}) => {
     const [panelOpenStatus, setPanelOpenStatus] = useState(false)
@@ -20,5 +21,12 @@ const CollapsibleSection = ({panelName, panelInfo}) => {
         </>
     )
 };
+
+
+CollapsibleSection.propTypes = {
+    panelInfo: Proptypes.array.isRequired,
+    panelName: Proptypes.string.isRequired,
+}
+
 
 export default CollapsibleSection;

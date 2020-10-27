@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import WeatherWidgetDay from './WeatherWidgetDay'
 import './weatherwidget.css'
 
@@ -13,5 +14,9 @@ const WeatherWidget = ({weatherData}) => {
         </div>
     )
 };
+
+WeatherWidget.propTypes = {
+    weatherData: PropTypes.array.isRequired,
+}
 
 export default WeatherWidget;

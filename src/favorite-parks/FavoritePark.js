@@ -9,6 +9,7 @@ const FavoritePark = () => {
                 the beauty our National Parks system has to offer. It uses React, React Routers, Axios, the Weather API, the NPS API and 
                 many more tools to create a one stop shop for all the information you may need to have a successful park visit. Use the 
                 search feature to find sites by state. Click on a site to pull up descriptions, directions and an 18 hour weather forecast.
+                Designed, built and deployed by Daniel Pericich.    
             </div>
         </div>
     )

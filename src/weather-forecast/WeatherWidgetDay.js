@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {getWeatherTime, getWeatherImage} from './WeatherControllers'
 
 const WeatherWidgetDay = ({weatherStuff}) => {
@@ -13,5 +14,8 @@ const WeatherWidgetDay = ({weatherStuff}) => {
     )
 };
 
+WeatherWidgetDay.propTypes = {
+    weatherStuff: PropTypes.object.isRequired,
+}
 
 export default WeatherWidgetDay;
