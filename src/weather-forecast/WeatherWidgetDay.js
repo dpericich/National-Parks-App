@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {getWeatherTime, getWeatherImage} from './WeatherControllers'
+const {getWeatherTime, getWeatherImage} = require('./WeatherControllers') 
 
 const WeatherWidgetDay = ({weatherStuff}) => {
     const image = require(`${getWeatherImage(weatherStuff)}`);
