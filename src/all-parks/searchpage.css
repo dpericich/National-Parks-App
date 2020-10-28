@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     background-color: darkgrey;
-    padding: 2em
+    padding: 2em;
 }
 
 a {
@@ -43,18 +43,19 @@ a {
     .park-title-image {
         height: 5em;
         font-size: 1.25em;
-        width: 100%;
+        width: 95%;
     }
 
     .search-bar-container {
         padding: 1em;
-        width: 100%;
+        overflow-x: hidden;
     }
 
     .state-dropdown {
-        width: 75%;
+        width: 100%;
         padding-left: .5em;
         display: block;
         margin: 0 auto;
+        font-size: 1.5em;
     }
 }

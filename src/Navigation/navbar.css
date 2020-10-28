@@ -10,6 +10,7 @@
     font-size: 1.5em;
     font-family: 'Courier', sans-serif;
     border-bottom: 2px solid black;
+    width: 100%;
 }
 
 .button-image {
@@ -30,7 +31,7 @@
     .navbar-header {
         font-size: 0.65em;
         padding: 8px 8.5px;
-        width: 100%;
+        width: 95%;
     }
 
     .button-image {
