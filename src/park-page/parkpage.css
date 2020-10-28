@@ -64,10 +64,9 @@ svg {
 
 @keyframes bear {
     0% {fill: black; color: black}
-    25% {fill: yellow; color: yellow}
-    50% {fill: green; color: green}
-    75% {fill: blue; color: blue}
-    100% {fill : red; color:red}
+    33% {fill: darkgrey; color: darkgrey}
+    66% {fill: #4a5a49; color: 4a5a49}
+    100% {fill: black; color: black}
 }
 
 /* Media Queries */
