@@ -3,11 +3,12 @@ import PropTypes from 'prop-types';
 import {getWeatherTime, getWeatherImage} from './WeatherControllers'
 
 const WeatherWidgetDay = ({weatherStuff}) => {
-    const image = require(`${getWeatherImage(weatherStuff)}`)
+    const image = require(`${getWeatherImage(weatherStuff)}`);
+    const time = getWeatherTime(weatherStuff);
 
     return(
         <div className="three-hour-container">
-            <h1 className="three-hour-time">{getWeatherTime(weatherStuff)}</h1>
+            <h1 className="three-hour-time">{time}</h1>
             <img alt="weather" className="image-placeholder" src={image}/>
             <p className="three-hour-high">{`HIGH : ${weatherStuff.main.temp_max}`}</p>
             <p className="three-hour-temp">{`CURRENT : ${weatherStuff.main.temp}`}</p>

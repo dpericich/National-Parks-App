@@ -30,6 +30,7 @@
     .navbar-header {
         font-size: 0.65em;
         padding: 8px 8.5px;
+        width: 100%;
     }
 
     .button-image {

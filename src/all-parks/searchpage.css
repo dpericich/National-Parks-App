@@ -48,6 +48,7 @@ a {
 
     .search-bar-container {
         padding: 1em;
+        width: 100%;
     }
 
     .state-dropdown {
