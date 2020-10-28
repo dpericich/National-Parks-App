@@ -18,5 +18,5 @@ Figure 2: Overview of what each park page looks like
 Figure 3: Image of the Weather Forecast widget on each page
 
 ## Tools Behind the App
-This app was created using React with React Routers for the routing. The two APIs used in this project were the NPS API for the national parks information and OpeanWeatherMap API for the weather information. The app is responsive to look crisp and clear for any device from a desktop down to an iPhone 5. Testing was done on the design's responsiveness, the passed data through use of the prop-types package and by testing for general edge cases. This app is deployed on heroku at: "Enter Link Here After Deployment."
+This app was created using React with React Routers for the routing. The two APIs used in this project were the NPS API for the national parks information and OpeanWeatherMap API for the weather information. The app is responsive to look crisp and clear for any device from a desktop down to an iPhone 5. Testing was done on the design's responsiveness, the passed data through use of the prop-types package and by testing for general edge cases. This app is deployed on heroku at: https://nationalparksapp.herokuapp.com/ 
 
